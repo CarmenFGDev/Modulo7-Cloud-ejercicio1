@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, TextField, List } from '@mui/material';
+import { envConstants } from 'core/constant';
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
@@ -20,7 +21,7 @@ interface MemberEntity {
 export const ListPage: React.FC = () => {
   const PAGE_SIZE = 3; 
   const [members, setMembers] = React.useState<MemberEntity[]>([]);
-  const [filter, setFilter] = React.useState<string>('lemoncode');
+  const [filter, setFilter] = React.useState<string>(envConstants.ORGANIZATION);
   const [page, setPage] = React.useState(1);
   const [totalElements, setTotalElements] = React.useState(0);
 
