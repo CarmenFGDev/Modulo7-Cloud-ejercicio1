@@ -27,13 +27,13 @@ export default defineConfig({
   
   resolve: {
     alias: {
-     /* assets: path.resolve(__dirname, 'src/assets'),
-      common: path.resolve(__dirname, 'src/common'),*/
+      assets: path.resolve(__dirname, 'src/assets'),
+      common: path.resolve(__dirname, 'src/common'),
       core: path.resolve(__dirname, 'src/core'),
-     /* layouts: path.resolve(__dirname, 'src/layouts'),
+      layouts: path.resolve(__dirname, 'src/layouts'),
       pods: path.resolve(__dirname, 'src/pods'),
       scenes: path.resolve(__dirname, 'src/scenes'),
-      'common-app': path.resolve(__dirname, 'src/common-app'),*/
+      'common-app': path.resolve(__dirname, 'src/common-app'),
     },
   },
 });
